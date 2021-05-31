@@ -12,7 +12,6 @@ describe('getIsDropdownMenuVisible()', () => {
   })
 })
 
-
 describe('isCompanySelected()', () => {
   const state = { selectedCompanyId: 1 }
 

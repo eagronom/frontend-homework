@@ -8,4 +8,3 @@ export const isCompanySelected = (state: ReduxState, props: { company: Company }
 
 export const getCompanies = (state: ReduxState) =>
   state.companies
-

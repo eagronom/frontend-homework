@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Companies /> renders list of company links 1`] = `
+<Fragment>
+  <div>
+    Your companies
+  </div>
+  <CompanyLink
+    id={1}
+    key="1"
+    name="Dummy company"
+  />
+  <CompanyLink
+    id={2}
+    key="2"
+    name="Smarty company"
+  />
+</Fragment>
+`;
