@@ -2,10 +2,11 @@ import MenuLink from './MenuLink'
 import Companies from './Companies'
 
 const DropdownMenu = () => (
-  <div>
+  <>
+  <div className="dropdown-menu">
     <Companies />
-
-    <div>
+    <hr className="dropdown-devide"/>
+    <div className="menu-link">
       <MenuLink
         text="Get the mobile app"
         icon="phone_iphone"
@@ -21,7 +22,7 @@ const DropdownMenu = () => (
         icon="book"
       />
     </div>
-
+    <hr className="dropdown-devide"/>
     <div>
       <MenuLink
         text="Settings"
@@ -34,6 +35,7 @@ const DropdownMenu = () => (
       />
     </div>
   </div>
+  </>
 )
 
 export default DropdownMenu

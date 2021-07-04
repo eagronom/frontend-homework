@@ -1,31 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DropdownMenu /> renders menu 1`] = `
-<div>
-  <Connect(Companies) />
-  <div>
-    <MenuLink
-      icon="phone_iphone"
-      text="Get the mobile app"
+<Fragment>
+  <div
+    className="dropdown-menu"
+  >
+    <Connect(Companies) />
+    <hr
+      className="dropdown-devide"
     />
-    <MenuLink
-      icon="people"
-      text="Community"
+    <div
+      className="menu-link"
+    >
+      <Connect(MenuLink)
+        icon="phone_iphone"
+        text="Get the mobile app"
+      />
+      <Connect(MenuLink)
+        icon="people"
+        text="Community"
+      />
+      <Connect(MenuLink)
+        icon="book"
+        text="Knowledge base"
+      />
+    </div>
+    <hr
+      className="dropdown-devide"
     />
-    <MenuLink
-      icon="book"
-      text="Knowledge base"
-    />
+    <div>
+      <Connect(MenuLink)
+        icon="settings"
+        text="Settings"
+      />
+      <Connect(MenuLink)
+        icon="exit_to_app"
+        text="Log out"
+      />
+    </div>
   </div>
-  <div>
-    <MenuLink
-      icon="settings"
-      text="Settings"
-    />
-    <MenuLink
-      icon="exit_to_app"
-      text="Log out"
-    />
-  </div>
-</div>
+</Fragment>
 `;

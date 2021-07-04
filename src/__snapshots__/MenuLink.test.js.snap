@@ -1,12 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MenuLink /> renders link 1`] = `
-<div>
-  <i
-    className="material-icons"
-  >
-    phone
-  </i>
-  Call me
-</div>
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <Connect(MenuLink)
+    icon="phone"
+    text="Call me"
+  />
+</ContextProvider>
 `;
